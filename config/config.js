@@ -11,7 +11,7 @@ module.exports = {
     },
     production: {
         database: {
-            host: 'localhost',
+            host: 'sql540.main-hosting.eu',
             name: 'u647084545_testes',
             dialect: 'mysql',
             user: 'u647084545_testes',
