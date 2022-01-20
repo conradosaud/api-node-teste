@@ -44,7 +44,7 @@ exports.BuscaId = (req, res, next) => {
         if(usuario){
             res.status(status.OK).send(usuario);
         }else{
-            res.status(status.OK).send(false);
+            res.status(status.OK).send();
         }
     })
     .catch(error => next(error));
