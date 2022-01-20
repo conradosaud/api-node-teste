@@ -10,6 +10,6 @@ app.use(express.json());
 app.use(routes);
 
 sequelize.sync({force: false}).then( () => {
-    const PORT = 3003;
+    const PORT = process.env.PORT || 3003;
     app.listen(PORT, () => console.log("Aplicação rodando em localhost:"+PORT) );
 } )
